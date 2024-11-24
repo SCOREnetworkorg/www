@@ -41,6 +41,14 @@ blockquote, q {
 
 
 
+/* red line for section breaks */
+hr.red-line {
+  border: none;
+  border-top: 5px solid #BE2334; /* Thickness and color */
+  width: 100%; /* Full width of the container */
+  margin: 20px 0; /* Spacing around the line */
+}
+
 /* Dropdown Button */
 /* .dropbtn {
   background-color: #04AA6D;
@@ -68,6 +76,11 @@ blockquote, q {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border: none;
+}
+
+#homepage-welcome {
+  font-size: 2.5em;
+  color: #BE2334;
 }
 
 /* Links inside the dropdown */
