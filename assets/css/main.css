@@ -2263,9 +2263,47 @@ button,
 /* Footer */
 #footer .copyright {
   color: #9fa3a6;
-  font-size: 0.9em; }
+  font-size: 0.9em; 
+  text-align: center;
+}
   #footer .copyright a {
     color: inherit; }
+
+/* Get involved three columns */
+/* container */
+.get-involved {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+/* columns */
+.get-involved > * {
+  position: relative;
+  padding:1rem;
+  margin: 10px;
+  width: 90%;
+  border: solid 1px red;
+  justify-content: space-around;
+}
+
+.get-involved-title {
+  position: absolute;
+  background: red;
+  /* margin: auto; */
+  width: 5%;
+  /* top: -15px; */
+}
+
+.get-involved-content {
+  background: green;
+  margin: auto;
+  width: 10%;
+}
 
 /* Menu */
 #menu ul {
