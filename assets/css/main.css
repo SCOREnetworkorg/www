@@ -299,6 +299,9 @@ hr {
 .align-right {
   text-align: right; }
 
+
+
+
 /* Row */
 .row {
   display: flex;
@@ -2279,30 +2282,47 @@ button,
   width: 60%;
   margin: auto;
   justify-content: space-around;
+  height: 100%;
+  
 }
 
 /* columns */
 .get-involved > * {
   position: relative;
-  padding:1rem;
+  /* padding:1rem; */
   margin: 10px;
-  width: 90%;
-  border: solid 1px red;
+  width: 95%;
+  height: auto;
+  background: white;
   justify-content: space-around;
+  border-radius: 30px;
+  padding: 20px;
 }
 
 .get-involved-title {
-  position: absolute;
-  background: red;
-  /* margin: auto; */
-  width: 5%;
-  /* top: -15px; */
+  position: relative;
+  background: #BE2334;
+  border-radius: 30px;
+  width: 80%;
+  margin: auto;
+  margin-top: -2em;
+  font-size: 1.5em;
+  color: white;
+  height: 3.5em;
+  vertical-align: middle;
 }
 
-.get-involved-content {
-  background: green;
-  margin: auto;
-  width: 10%;
+.get-involved-title a {
+  color: white;
+}
+
+.get-involved-title a:hover {
+  color: #f67878 !important ;
+  border-bottom: dotted 1px;
+}
+
+#join-us {
+  padding-top:7%;
 }
 
 /* Menu */
