@@ -187,7 +187,7 @@ a {
   text-decoration: none; }
   a:hover {
     border-bottom-color: #BE2334;
-    color: #BE2334 !important; }
+    color: #BE2334 ; }
     a:hover strong {
       color: inherit; }
 
@@ -2324,6 +2324,150 @@ button,
 #join-us {
   padding-top:7%;
 }
+
+
+
+.modules {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  width: 75%;
+  height: 100%;
+  margin: auto;
+  justify-content: space-around;
+  height: 100%;
+  
+}
+
+/* columns */
+.module-column > * {
+  position: relative;
+  padding: 20px;
+  margin: 10px;
+  width: 95%;
+  height: 100%;
+  color: black;
+  justify-content: space-around;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+
+.events {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  width: 80%;
+  /* height: 10%; */
+  margin: auto;
+  justify-content: space-around;
+  
+}
+
+/* columns */
+.event-column > * {
+  position: relative;
+  padding: 20px;
+  margin: 10px;
+  width: 95%;
+  height: 90%;
+  color: black;
+  background-color: #d3d3d3;
+  justify-content: space-around;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+
+#view-all-events {
+  /* margin-top: 100px; */
+  /* color:purple; */
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-left:5em;
+  font-size: 1.8em;
+  font-family: 'Font Awesome 5 Free';
+  font-family: "Roboto Slab", serif;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: white;
+  margin: auto;
+  width: 90%;
+  
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  /* padding: 10px; */
+  text-align: center;
+  width: 100%;
+  height: 50%;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #BE2334;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  user-select: none;
+  border: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #BE2334;
+  color: white !important ;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 10px;
+    background: white;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #D8D8D8;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+
+
 
 /* Menu */
 #menu ul {
