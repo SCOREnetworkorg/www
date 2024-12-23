@@ -41,20 +41,23 @@
 							</div>
 							
 							<div class="column right">
-							  <div class="topnav">
+							  <div class="topnav" id="topnav">
 								<a class="active" href="index.html">Home</a>
 								<a href="about.html">About Us</a>
 								<a href="https://modules.scorenetwork.org/" target="_blank">Module Repository</a>
 								<a href="https://data.scorenetwork.org/" target="_blank">Data Repository</a>
 								<a href="submissions.html">Collaborate with SCORE</a>
+								<a href="javascript:void(0);" class="icon" onclick="showDropdown()">
+									<i class="fa fa-bars"></i>
+								</a>
 
-								<div class="topnav-right" style="padding:0px;">
-									<a href="https://twitter.com/scorenetworkorg" class="icon brands fa-twitter" rel="noopener" target="_blank"><span class="label">Twitter</span></a>
-									<a href="https://www.linkedin.com/company/scorenetworkorg" class="icon brands fa-linkedin-in" rel="noopener" target="_blank"><span class="label">LinkedIn</span></a>
-									<a href="https://www.youtube.com/@SCORENetworkVideos" class="icon brands fa-youtube" rel="noopener" target="_blank"><span class="label">YouTube</span></a>
-								</div>
-							  </div>
-						  
+							</div>
+							  	<div class="topnav-right" style="padding:0px;">
+								<a href="https://twitter.com/scorenetworkorg" class="icon brands fa-twitter" rel="noopener" target="_blank"><span class="label">Twitter</span></a>
+								<a href="https://www.linkedin.com/company/scorenetworkorg" class="icon brands fa-linkedin-in" rel="noopener" target="_blank"><span class="label">LinkedIn</span></a>
+								<a href="https://www.youtube.com/@SCORENetworkVideos" class="icon brands fa-youtube" rel="noopener" target="_blank"><span class="label">YouTube</span></a>
+							</div>
+
 						   </div>
 						   
 						</div>
@@ -336,6 +339,16 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/events-carousel.js"></script>
+			<script>
+				function showDropdown() {
+					var x = document.getElementById("topnav");
+					if (x.className === "topnav") {
+						x.className += " responsive";
+					} else {
+						x.className = "topnav";
+					}
+				}
+			</script>
 
 	</body>
 </html>
