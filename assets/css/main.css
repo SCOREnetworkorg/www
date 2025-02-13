@@ -2322,6 +2322,7 @@ button,
 
 .get-involved-title a {
   color: white;
+  margin: auto;
 }
 
 .get-involved-title a:hover {
@@ -2330,7 +2331,8 @@ button,
 }
 
 #join-us {
-  padding-top:7%;
+  /* margin: auto; */
+  padding-top: .8em;
 }
 
 
@@ -2390,11 +2392,11 @@ button,
 
 
 .collapsible {
-  background-color: #BE2334;
-  color: white;
+  background-color: #d3d3d3;
+  color: black;
   cursor: pointer;
   width: 100%;
-  border: none;
+  border-bottom: 5px solid #BE2334;
   text-align: left;
   outline: none;
   box-shadow: none;
@@ -2402,25 +2404,27 @@ button,
 }
 
 .active2, .collapsible:hover {
-  background-color: #555;
+  background-color: #b7b7b7;
   box-shadow: none;
-  border: none;
+  border-bottom: 5px solid #BE2334;
   outline: none;
 }
 
 .collapsible:after {
   content: '\002B';
-  color: white;
+  color: black;
   font-weight: bold;
   float: right;
   margin-left: 5px;
   box-shadow: none;
   border: none;
   outline: none;
+  /* border-bottom: 10px solid #BE2334; */
 }
 
 .active2:after {
   content: "\2212";
+  /* border-bottom: 8px solid #BE2334; */
 }
 
 .content2 {
