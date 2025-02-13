@@ -107,7 +107,10 @@ hr.red-line {
 .dropdown:hover .dropbtn {background-color: white;}
 
 
-
+.two-column-list {
+  columns: 2; /* Split into two columns */
+  column-gap: 40px; /* Space between columns */
+}
 
 
 
@@ -2362,7 +2365,7 @@ button,
 .events {
   display: grid;
   grid-auto-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   width: 80%;
   /* height: 10%; */
@@ -2376,7 +2379,7 @@ button,
   position: relative;
   padding: 20px;
   margin: 10px;
-  width: 97%;
+  width: 90%;
   height: 90%;
   color: black;
   background-color: #d3d3d3;
@@ -2384,6 +2387,50 @@ button,
   border-radius: 30px;
   padding: 20px;
 }
+
+
+.collapsible {
+  background-color: #BE2334;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  box-shadow: none;
+  font-size: 15px;
+}
+
+.active2, .collapsible:hover {
+  background-color: #555;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.active2:after {
+  content: "\2212";
+}
+
+.content2 {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
 
 
 #view-all-events {
