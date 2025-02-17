@@ -2585,6 +2585,20 @@ button,
   float: right;
 }
 
+
+.roster-column {
+  float: left;
+}
+
+.left {
+  width: 6%;
+}
+
+.right {
+	justify-content: flex-end;
+  	width: 94%;
+}
+
 /* @media screen and (max-width: 600px) {
   .topnav a {display: none;}
   .topnav a.icon {
@@ -2609,7 +2623,7 @@ button,
 
 .container {
   display: flex;
-  align-items: flex-end; /* Aligns the bottom of the columns */
+  align-items: flex-start; /* Aligns the bottom of the columns */
   justify-content: space-between; /* Adds space between the columns */
   width: 85%;
   margin: auto;
